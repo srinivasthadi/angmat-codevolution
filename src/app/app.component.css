@@ -2,10 +2,35 @@ p {
   font-family: Lato;
 }
 
-button {
+/* button {
   margin : 20px;
+} */
+
+/* div {
+  margin : 20px;
+} */
+
+/* This is for navbar toolbar 
+.navbar {
+  justify-content: space-between;
 }
 
-div {
-  margin : 20px;
+span {
+  padding-right: 1rem;
+} */
+
+mat-sidenav-container {
+  height: 100%;
 }
+
+mat-sidenav, mat-sidenav-content {
+  padding: 16px;
+
+}
+
+mat-sidenav {
+  background-color: lightcoral;
+  width: 200px;
+
+}
+
