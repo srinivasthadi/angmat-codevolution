@@ -1,4 +1,61 @@
 
+<div>
+ <span matBadge="5" matBadgePosition="below before">Notifications </span>
+</div>
+<div>
+ <span matBadge="5" matBadgePosition="below after">Notifications </span>
+</div>
+<div>
+ <span matBadge="5" matBadgePosition="above before">Notifications </span>
+</div>
+<div>
+ <span matBadge="5">Notifications </span>
+</div>
+
+<!-- We can change the badge size using matBadgeSize attribute -->
+
+<div>
+ <span matBadge="5" matBadgeSize="small">Notifications </span>
+</div>
+<div>
+ <span matBadge="5" matBadgeSize="medium">Notifications </span>
+</div>
+<div>
+ <span matBadge="5" matBadgeSize="large">Notifications </span>
+</div>
+
+<!-- We can change the color of the badge using matBadgeColor attribute -->
+<div>
+ <span matBadge="5" matBadgeColor="primary">Notifications </span>
+</div>
+<div>
+ <span matBadge="5" matBadgeColor="accent">Notifications </span>
+</div>
+
+<!-- Badge is getting overlappped onto the content, it can be changed using the matBadgeOverlap="false" -->
+<div>
+ <span matBadge="5" matBadgeColor="warn" matBadgeOverlap="false">Notifications </span>
+</div>
+
+
+<!-- We can bind the badge values to the property in the class of app.component.ts
+In this example, we are binding notifications property in the class to matBadge in html template -->
+
+
+<div>
+ <span [matBadge]="notifications" matBadgePosition="above after">Notifications </span>
+</div>
+
+
+<!-- Conditions rendering can also be done using [matBadgeHidden] = "notifications === 2" -->
+
+<div>
+ <span [matBadge]="notifications" [matBadgeHidden] = "notifications === 0">Notifications </span>
+</div>
+
+
+
+
 <!-- <h1 mat-header3> Hey</h1>
 
 <button mat-raised-button color="primary">Click Me</button>
