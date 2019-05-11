@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   name = 'Angular';
   notifications: number = 2;
+
+  showSpinner : boolean = false;
+
+  loadData(){
+    this.showSpinner = true;
+    setTimeout(() => this.showSpinner = false,
+     5000);
+  }
 }
